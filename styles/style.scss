@@ -89,6 +89,27 @@ h2{
     cursor: pointer;
     &:hover{
         background-color: color(bgLight);
+        text-decoration: none;
+    }
+}
+.small-button{
+    max-width: 160px;
+}
+.circle-button{
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    border: 2px solid color(grey);
+    background: color(bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: color(link);
+    cursor: pointer;
+    &:hover{
+        background-color: color(bgLight);
+        text-decoration: none;
     }
 }
 #main-center{
@@ -134,9 +155,10 @@ h2{
     // border: 1px solid red;
     .project{
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         margin-bottom: 200px;
         @include less800{
+            align-items: center;
             flex-direction: column;
         }
         .project-link{
@@ -157,6 +179,9 @@ h2{
                 flex-direction: column;
                 align-items: center;
                 text-align: center;
+                p, a{
+                    margin-top: 15px;
+                }
             }
             .indent{
                 padding-left: 15px;
@@ -164,6 +189,7 @@ h2{
         }
         .project-img-holder{
             position: relative;
+            padding-top: 6px;
             width: 312px;
             @include less600{
                 width: auto;
@@ -208,7 +234,7 @@ h2{
         width: 1024px;
         max-width: 94%;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         margin: $spacing auto;
         @include less1100{
             margin-top: $spacing;
@@ -229,6 +255,7 @@ h2{
             }
             @include less1100{
                 height: auto;
+                align-self: center;
             }
         }
         #profile-text{
@@ -334,5 +361,37 @@ h2{
                 }
             }
         }
+    }
+}
+
+footer{
+    .hidden{
+        bottom: -220px;
+    }
+    .show{
+        bottom: 0;
+    }
+    #footer-links-holder{
+        position: relative;
+        overflow: hidden;
+    }
+    .bottom-link{
+        transition: ease 1s;
+        position: absolute;
+        height: 90px;
+        width: 60px;
+        color: color(grey);
+        font-weight: bold;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #footer-text, #footer-links-holder{
+        height: 100px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }

@@ -17,8 +17,8 @@
     </div>
 
     <div id="landing-page-buttons" class="flex-row">
-        <a class="button landing-page-button">About</a>
-        <a class="button landing-page-button">Projects</a>
+        <a class="button landing-page-button" id="about-button">About</a>
+        <a class="button landing-page-button" id="projects-button">Projects</a>
     </div>
 </div>
 </section>
@@ -41,6 +41,8 @@
                 <p class="grey">/* HTML, SCSS, Vanilla JS */</p>
                 <br>
                 <p class="grey">/* A website I built for an online group of artists. The team leader gave me a mock up which I converted into a webpage. I met with the leader online daily to discuss the progress and to get feedback. */</p>
+                <br>
+                <a class="button small-button" href="https://mike-silverman.com/vertices" target="_blank">Visit&nbsp<i class="fa fa-arrow-alt-circle-right"></i></a>
             </div>
         </div>
         <div id="project1" class="project">
@@ -54,6 +56,8 @@
                 <p class="grey">/* HTML, CSS, Vanilla JS */</p>
                 <br>
                 <p class="grey">/* This was a coding challenge to make a singe page site to display weather data from an API. I used JavaScript to make the AJAX call, decide which data to display, and create and delete elements. */</p>
+                <br>
+                <a class="button small-button" href="https://mike-silverman.com/weatherofthefuture" target="_blank">Visit&nbsp<i class="fa fa-arrow-alt-circle-right"></i></a>
             </div>
         </div>
         <div id="project1" class="project">
@@ -67,6 +71,8 @@
                 <p class="grey">/* HTML, CSS, Vanilla JS */</p>
                 <br>
                 <p class="grey">/* My mom's old website was from the early 2000's. I designed and created a new site with a more modern feel. This site features a fading image slideshow on the cover, as well as a full screen gallery viewer with captions. */</p>
+                <br>
+                <a class="button small-button" href="https://mcguffsilverman.com/" target="_blank">Visit&nbsp<i class="fa fa-arrow-alt-circle-right"></i></a>
             </div>
         </div>
         <div id="project1" class="project">
@@ -81,7 +87,7 @@
                 <br>
                 <p class="grey">/* Learning React was an opportunity to bring to life a pen-and-paper game I had designed earlier. I used CSS grid to align the elements, and JavaScript to create the battle system. The game feartures three playable characters, each with three unique abilities. There is also a slideshow with gameplay instructions. */</p>
                 <br>
-                <button class="button">Visit&nbsp<i class="fa fa-arrow-alt-circle-right"></i></button>
+                <a class="button small-button" href="https://mike-silverman.com/reactRpg.html" target="_blank">Visit&nbsp<i class="fa fa-arrow-alt-circle-right"></i></a>
             </div>
         </div>
     </div>

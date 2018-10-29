@@ -94,6 +94,36 @@ h2 {
 
 .button:hover {
   background-color: #373d4b;
+  text-decoration: none;
+}
+
+.small-button {
+  max-width: 160px;
+}
+
+.circle-button {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  border: 2px solid #abb2bf;
+  background: #282c34;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 50px;
+  color: #56b6c2;
+  cursor: pointer;
+}
+
+.circle-button:hover {
+  background-color: #373d4b;
+  text-decoration: none;
 }
 
 #main-center {
@@ -174,14 +204,17 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   margin-bottom: 200px;
 }
 
 @media (max-width: 800px) {
   #projects-holder .project {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -221,6 +254,9 @@ h2 {
             align-items: center;
     text-align: center;
   }
+  #projects-holder .project .project-text p, #projects-holder .project .project-text a {
+    margin-top: 15px;
+  }
 }
 
 #projects-holder .project .project-text .indent {
@@ -229,6 +265,7 @@ h2 {
 
 #projects-holder .project .project-img-holder {
   position: relative;
+  padding-top: 6px;
   width: 312px;
 }
 
@@ -291,9 +328,9 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 130px auto;
 }
 
@@ -330,6 +367,9 @@ h2 {
 @media (max-width: 1100px) {
   #about-section #profile-holder #profile-img-holder {
     height: auto;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
 }
 
@@ -488,5 +528,55 @@ h2 {
 
 #about-section #contact #contact-form-holder form button:hover {
   background: #373d4b;
+}
+
+footer .hidden {
+  bottom: -220px;
+}
+
+footer .show {
+  bottom: 0;
+}
+
+footer #footer-links-holder {
+  position: relative;
+  overflow: hidden;
+}
+
+footer .bottom-link {
+  -webkit-transition: ease 1s;
+  transition: ease 1s;
+  position: absolute;
+  height: 90px;
+  width: 60px;
+  color: #abb2bf;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer #footer-text, footer #footer-links-holder {
+  height: 100px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=style.css.map */
