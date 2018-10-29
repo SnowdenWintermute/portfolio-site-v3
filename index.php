@@ -109,9 +109,9 @@
             <h1 class="red">Hello world!</h1>
             <p class="grey">I am a self-taught web developer. I started my learning on May 7th, 2018. Most days I put at least three hours towards developing my skillset.</p>
             <br>
-            <p class="grey">Although I did not go to school for computer science, computers have been a passion of mine since childhood. My love of technology has neccesitated an ability to systematically resolve issues in a logical manner. I really enjoy figuring out why something doesn't work and solving it.</p>
+            <p class="grey">Although I did not go to school for computer science, computers have been a passion of mine since childhood. My love of technology has neccesitated an ability to systematically resolve issues in a logical manner. I enjoy figuring out why something doesn't work and fixing it.</p>
             <br>
-            <p class="grey">My previous career was in the non-profit sector, working with various groups in an outdoor setting. While this career was not focused on technology, the experience was relevant in the areas of customer interactions and team dynamics.</p>
+            <p class="grey">My previous career was in the non-profit sector working with various groups in an outdoor setting. While this career was not focused on technology, the experience was relevant in the areas of customer interactions and team dynamics.</p>
             <div id="social-links">
                 <a href="https://www.linkedin.com/in/michael-silverman-8a854610/" target="_blank"><i class="fab fa-linkedin"></i></a>
                 <a href="https://github.com/SnowdenWintermute" target="_blank"><i class="fab fa-github"></i></a>
@@ -123,14 +123,14 @@
     <div id="contact">
         <div id="contact-form-holder">
             <h1 class="green">Get in touch</h1>
-            <form action="">
+            <form action="contact-submit.php" method="POST">
                 <label for="name">Name:</label>
                 <input type="text" name="name" type="text" placeholder="Name..." required>
                 <label for="email">Email address:</label>
                 <input type="text" name="email" type="email" placeholder="Email..." required>
                 <label for="name">Name:</label>
                 <textarea type="text" name="message" placeholder="Message..."></textarea>
-                <button class="button" type="submit">Send</button>
+                <button class="button" name="submit" type="submit">Send</button>
             </form>
         </div>
     </div>
