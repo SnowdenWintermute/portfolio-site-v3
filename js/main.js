@@ -6,16 +6,17 @@ var height = Math.max( body.scrollHeight, body.offsetHeight,
 
 let prevScrollTop
 //for the mouse reveal to not dissapear in some cases
-let mousedOver = false;
+let menuFromScroll = false;
 
 window.addEventListener('scroll', function(){
      console.log("height: " + height);
     var scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
     if(scrollTop <= prevScrollTop){
         document.getElementById("top-nav").className = "nav-show";
-        mousedOver = false;
+        menuFromScroll = true;
     }else if(scrollTop >= prevScrollTop){
-        document.getElementById("top-nav").className = "nav-hidden";        
+        document.getElementById("top-nav").className = "nav-hidden";
+        menuFromScroll = false;        
     }
     prevScrollTop = scrollTop;
     if(height-1115 <= scrollTop){
@@ -65,11 +66,16 @@ document.getElementById("nav-top-button").addEventListener('click', function(){
         event = event || window.event;
 
         if(event.clientY <= 80){
+            menuFromScroll = false;
             document.getElementById("top-nav").className = "nav-show";
-            mousedOver = true;
         }        
+        if(event.clientY > 80 && !menuFromScroll){
+            document.getElementById("top-nav").className = "nav-hidden";
+        }        
+        console.log(menuFromScroll);
+        console.log(event.clientY);
     }
 
-    document.getElementById("top-nav").onmouseleave = function(){
-        document.getElementById("top-nav").className = "nav-hidden";
-    }
+    // document.getElementById("top-nav").onmouseleave = function(){
+    //     document.getElementById("top-nav").className = "nav-hidden";
+    // }
