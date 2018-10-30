@@ -72,10 +72,4 @@ document.getElementById("nav-top-button").addEventListener('click', function(){
         if(event.clientY > 80 && !menuFromScroll){
             document.getElementById("top-nav").className = "nav-hidden";
         }        
-        console.log(menuFromScroll);
-        console.log(event.clientY);
     }
-
-    // document.getElementById("top-nav").onmouseleave = function(){
-    //     document.getElementById("top-nav").className = "nav-hidden";
-    // }

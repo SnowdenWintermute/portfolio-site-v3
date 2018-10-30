@@ -102,9 +102,7 @@
     <img id="wordcloud" src="./img/wordcloud6.png" alt="">
 
     <div id="profile-holder">
-        <div id="profile-img-holder">
-            <img src="./img/mike-profile.png" alt="">
-        </div>
+        <img src="./img/mike-profile.png" alt="">
         <div id="profile-text">
             <h1 class="red">Hello world!</h1>
             <p class="grey">I am a self-taught web developer. I started my learning on May 7th, 2018. Most days I put at least three hours towards developing my skillset.</p>

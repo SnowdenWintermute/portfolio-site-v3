@@ -1,7 +1,7 @@
 <footer>
 <div id="footer-links-holder">
     <div class="bottom-link hidden" id="top-button">
-    <a class="circle-button" href=""><i class="far fa-arrow-alt-circle-up"></i></a>
+    <div class="circle-button" href=""><i class="far fa-arrow-alt-circle-up"></i></div>
     TOP
     </div>
 </div>
