@@ -30,31 +30,37 @@ window.addEventListener('scroll', function(){
 
 document.getElementById("about-button").addEventListener('click', function(){
     document.getElementById('about-section').scrollIntoView({ 
+        block: 'start',
         behavior: 'smooth' 
       });
 })
 document.getElementById("projects-button").addEventListener('click', function(){
     document.getElementById('projects-section').scrollIntoView({ 
+        block: 'start',
         behavior: 'smooth' 
       });
 })
 document.getElementById("top-button").addEventListener('click', function(){
     document.getElementById('landing-section').scrollIntoView({ 
+        block: 'start',
         behavior: 'smooth' 
       });
 })
 document.getElementById("nav-about-button").addEventListener('click', function(){
-    document.getElementById('about-section').scrollIntoView({ 
-        behavior: 'smooth' 
+    document.getElementById('about-section').scrollIntoView({
+        block: 'start',
+        behavior: 'smooth'
       });
 })
 document.getElementById("nav-projects-button").addEventListener('click', function(){
     document.getElementById('projects-section').scrollIntoView({ 
+        block: 'start',
         behavior: 'smooth' 
       });
 })
 document.getElementById("nav-top-button").addEventListener('click', function(){
     document.getElementById('landing-section').scrollIntoView({ 
+        block: 'start',
         behavior: 'smooth' 
       });
 })
