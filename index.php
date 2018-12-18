@@ -30,21 +30,20 @@
     </header>
 
     <div id="projects-holder">
-        <div id="project1" class="project">
+    <div id="project1" class="project">
             <div class="project-img-holder">
-                <img class="img-desktop" src="./img/vertices-monitor.png" alt="">
-                <img class="img-mobile" id="vertices-mobile" src="./img/vertices-phone-generic.png" alt="">
+                <img class="img-desktop" src="./img/forum-monitor.png" alt="">
             </div>
             <div class="project-text">
-                <h2 class="red"><a class="project-link" href="https://mike-silverman.com/vertices" target="_blank">Vertices</a></h2>
-                <p class="green">Webpage for the Vertices group, an online collective of artists.</p>
-                <p class="grey">/* HTML, SCSS, Vanilla JS */</p>
+                <h2 class="red"><a class="project-link" href="https://aqueous-refuge-11325.herokuapp.com" target="_blank">Forum RPG</a></h2>
+                <p class="green">A forum style website built with the MERN stack</p>
+                <p class="grey">/* React.js, MongoDB, Express.js, Node.js, SCSS */</p>
                 <br>
-                <p class="grey">/* A website I built for an online group of artists. The team leader gave me a mock up which I converted into a webpage. I met with the leader online daily to discuss the progress and to get feedback. */</p>
+                <p class="grey">/* My first full stack application, inspired by <a href="https://www.gaiaonline.com/" target ="_blank">Gaia Online</a>. This is my current project and I am still working on adding more features. */</p>
                 <br>
                 <div class="project-buttons">
-                    <a class="button small-button" href="https://mike-silverman.com/vertices" target="_blank">Visit&nbsp<i class="fa fa-arrow-alt-circle-right"></i></a>
-                    <a class="button small-button" href="https://github.com/SnowdenWintermute/vertices-product-page" target="_blank">Code&nbsp<i class="fab fa-github"></i></a>
+                    <a class="button small-button" href="https://aqueous-refuge-11325.herokuapp.com" target="_blank">Visit&nbsp<i class="fa fa-arrow-alt-circle-right"></i></a>
+                    <a class="button small-button" href="https://github.com/SnowdenWintermute/forum-rpg" target="_blank">Code&nbsp<i class="fab fa-github"></i></a>
                 </div>
             </div>
         </div>
@@ -63,6 +62,24 @@
                 <div class="project-buttons">
                     <a class="button small-button" href="https://mike-silverman.com/weatherofthefuture" target="_blank">Visit&nbsp<i class="fa fa-arrow-alt-circle-right"></i></a>
                     <a class="button small-button" href="https://github.com/SnowdenWintermute/customWeatherApp" target="_blank">Code&nbsp<i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+        <div id="project1" class="project">
+            <div class="project-img-holder">
+                <img class="img-desktop" src="./img/vertices-monitor.png" alt="">
+                <img class="img-mobile" id="vertices-mobile" src="./img/vertices-phone-generic.png" alt="">
+            </div>
+            <div class="project-text">
+                <h2 class="red"><a class="project-link" href="https://mike-silverman.com/vertices" target="_blank">Vertices</a></h2>
+                <p class="green">Webpage for the Vertices group, an online collective of artists.</p>
+                <p class="grey">/* HTML, SCSS, Vanilla JS */</p>
+                <br>
+                <p class="grey">/* A website I built for an online group of artists. The team leader gave me a mock up which I converted into a webpage. I met with the leader online daily to discuss the progress and to get feedback. */</p>
+                <br>
+                <div class="project-buttons">
+                    <a class="button small-button" href="https://mike-silverman.com/vertices" target="_blank">Visit&nbsp<i class="fa fa-arrow-alt-circle-right"></i></a>
+                    <a class="button small-button" href="https://github.com/SnowdenWintermute/vertices-product-page" target="_blank">Code&nbsp<i class="fab fa-github"></i></a>
                 </div>
             </div>
         </div>
